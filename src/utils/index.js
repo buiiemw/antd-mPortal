@@ -1,5 +1,4 @@
 import { cloneDeep } from 'lodash'
-const { pathToRegexp } = require("path-to-regexp")
 import store from 'store'
 import { i18n } from './config'
 
@@ -14,6 +13,7 @@ export config from './config'
 export request from './request'
 export { Color } from './theme'
 
+const { pathToRegexp } = require("path-to-regexp")
 export const languages = i18n ? i18n.languages.map(item => item.key) : []
 export const defaultLanguage = i18n ? i18n.defaultLanguage : ''
 

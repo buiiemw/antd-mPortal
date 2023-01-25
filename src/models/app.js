@@ -3,13 +3,13 @@
 import { history } from 'umi'
 import { stringify } from 'qs'
 import store from 'store'
-const { pathToRegexp } = require("path-to-regexp")
 import { ROLE_TYPE } from 'utils/constant'
 import { queryLayout } from 'utils'
 import { CANCEL_REQUEST_MESSAGE } from 'utils/constant'
 import api from 'api'
 import config from 'config'
 
+const { pathToRegexp } = require("path-to-regexp")
 const { queryRouteList, logoutUser, queryUserInfo } = api
 
 const goDashboard = () => {

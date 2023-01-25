@@ -7,12 +7,12 @@ import { connect } from 'umi'
 import { MyLayout, GlobalFooter } from 'components'
 import { Drawer, FloatButton, Layout } from 'antd';
 import { enquireScreen, unenquireScreen } from 'enquire-js'
-const { pathToRegexp } = require("path-to-regexp")
 import { config, getLocale } from 'utils'
 import Error from '../pages/404'
 import styles from './PrimaryLayout.less'
 import store from 'store'
 
+const { pathToRegexp } = require("path-to-regexp")
 const { Content } = Layout
 const { Header, Bread, Sider } = MyLayout
 
